@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Portfolio</title>
+</head>
+<body>
+<style>
+    /* CSS stilovi za web stranicu */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 2;
+      padding: 2;
+	  background-image: radial-gradient(white, gray);
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 20px;
+      margin: 20px;
+    }
+	.gallery img {
+      width: 100%;
+      height: auto;
+    }
+	header {
+      background-color: gray;
+      padding: 30px;
+      color: #fff;
+      text-align: center;
+	  font-size: 30;
+    }
+	    body {
+      font-family: Arial, sans-serif;
+      margin: 2;
+      padding: 2;
+	  background-image: radial-gradient(white, black);
+    }
+	    .gallery {
+	
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+    }
+
+</style>
+
+<body>
+<header>
+<body class="O meni">
+	<p><a href="index3.html" class="link4">Početna</a></p>
+	<p><a href="novo 1.html" class="link3">Portfolio</a></p>
+	<p><a href="video.html" class="link3">Video</a></p>
+	</header>
+
+<h1>Informacije</h1>
+
+	<ul>
+      <p>Student sam Grafičkog fakulteta u Zagrebu, smjer Dizajn grafičkih proizvoda.</p>
+      <p>U slobodno se vrijeme bavim fotografijom, videografijom te amaterskom produkcijom glazbe.</p>
+      <p>Porijeklom sam iz Zadra, preciznije Nina, malog grada u blizini Zadra.</p>
+      <p>Smatram da je fotografija moćan medij koji nam omogućuje zamrzavanje trenutaka u vremenu.</p>
+	  <p>Poznajem većinu Adobeovih programa za obradu različith grafičkih proizvoda.</p>
+	  <p>Najviše koristim Photoshop, Premiere Pro te Lightroom koji mi je konstantno upaljen na računalu.</p>
+	  <p>Od glazbe najviše slušam Rock'n'Roll, Rap, Trap te više vrsta elektroničke glazbe poput Techna, Housea i sličnog.</p>
+	  <p>S obzirom da sam ljubitelj elektroničke glazbe, često završim kao DJ na partijima i raznim druženjima.</p>
+	  <p>Osim fotografije i glazbe, moja velika ljubav su kokteli što i govori 5 sezona radnog staža kao koktel majstor u raznim Cocktail Barovima u Zadru.</p>
+    </ul>
+
+<button class="accordion">Fotografska oprema</button>
+<div class="panel">
+	<ul>
+      <p>Kamera: Sony Alpha A7III</p>
+      <p>Objektiv: Sigma 35mm f/1.4</p>
+      <p>Stativ: Manfrotto MT055XPRO3</p>
+      <p>Memorijske kartice: SanDisk Extreme Pro SDXC 256GB (x2)</p>
+    </ul>
+</div>
+<div class="gallery">
+    <img src=ja.jpg alt="ja.jpg">
+	</div>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}
+</script>
+</body>
+</body>
